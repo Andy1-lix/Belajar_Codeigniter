@@ -7,7 +7,7 @@
         <div class="col">
             <h2>Contact us</h2>
 
-            <?php foreach($alamat as $a );  ?>
+            <?php foreach($alamat as $a );  ?> <!--Inisialsi data array yang berada pada controller pages.php -->
             <ul>
                 <li> <?= $a['tipe']; ?></li>
                 <li> <?= $a['alamat']; ?></li>
