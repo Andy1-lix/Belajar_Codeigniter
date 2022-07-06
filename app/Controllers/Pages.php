@@ -8,20 +8,35 @@ class Pages extends BaseController
 	{
 		$data = [
 			'title' => 'Home | andy',
-			'tes' => ['1','2','3']	
 		];
-		echo view('layout/header',$data);
-		echo view('pages/home');
-		echo view('layout/footer');
+		echo view('pages/home', $data);
 	}
 	public function about()
 	{
 		$data = [
 			'title' => 'About | andy'
-				
 		];
-		echo view('layout/header',$data);
-		echo view('pages/about');
-		echo view('layout/footer');
+		echo view('pages/about', $data);
+	}
+
+	public function contact()
+	{
+		$data = [
+			'title' => 'About | andy',
+			'alamat' => [
+				[
+					'tipe' => 'Rumah',
+					'alamat' => 'Jl.Pettarani no.16',
+					'Kota' => 'Makassar',
+				],
+				 [
+					'tipe' => 'kantor',
+					'alamat' => 'Jl.Pettarani no.6',
+					'Kota' => 'Sidrap',
+				]
+			]
+		];
+
+		echo view('pages/contact', $data);
 	}
 }
