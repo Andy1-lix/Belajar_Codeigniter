@@ -39,6 +39,10 @@ $routes->get('/', 'pages::index');
 $routes->get('/home', 'Pages::index');
 $routes->get('/about', 'Pages::about');
 $routes->get('/contact', 'Pages::contact');
+$routes->get('/contact', 'Pages::contact');
+
+$routes->get('/komik', 'Komik::index');
+
 
 /*
  * --------------------------------------------------------------------
